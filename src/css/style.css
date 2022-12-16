@@ -92,6 +92,7 @@ p {
     color: red;
     font-size: 10px;
     font-weight: 400;
+    display: none;
 }
 
 .formulario .erro {
@@ -100,6 +101,10 @@ p {
 
 .formulario .errotextarea {
     margin: -10px 0 2px 0;
+}
+
+.erro.ativa, .errotextarea.ativa{
+    display: block;
 }
 
 /* dispositivos pequenos (celulares em posição paisagem, menos de 768px) */

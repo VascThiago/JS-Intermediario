@@ -17,17 +17,17 @@
         </div>
 
         <form method="post" class="formulario">
-            <input type="text" name="nome" id="nome" placeholder="Nome Completo *">
-            <div name="erro"></div>
+            <input type="text" name="input" id="nome" placeholder="Nome Completo *">
+            <p name="erro" class="erro">campo obrigatório</p>
 
-            <input type="email" name="email" id="email" placeholder="Email *">
-            <div name="erro"></div>
+            <input type="email" name="input" id="email" placeholder="Email *">
+            <p name="erro" class="erro">campo obrigatório</p>
 
-            <input type="tel" name="telefone" maxlength="15" id="telefone" onkeyup="handlePhone(event)" placeholder="Telefone *" />
-            <div name="erro"></div>
+            <input type="tel" name="input" maxlength="15" id="telefone" onkeyup="handlePhone(event)" placeholder="Telefone *" />
+            <p name="erro" class="erro">campo obrigatório</p>
 
-            <textarea name="mensagem" id="mensagem" rows="5" placeholder="Mensagem *"></textarea>
-            <div name="erro"></div>
+            <textarea name="input" id="mensagem" rows="5" placeholder="Mensagem *"></textarea>
+            <p name="erro" class="errotextarea">campo obrigatório</p>
 
             <p>*campos obrigatórios</p>
             <input type="button" onclick="validar()" value="Enviar" class="btn-enviar">
